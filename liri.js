@@ -36,7 +36,7 @@ let writeToLog = function(data) {
 // =================================================================
 // Spotify function, Spotify api
 function getMeSpotify(songName) {
-    let spotify = new Spotify(dataKeys.spotifyKeys);
+    
 
     if (!songName) {
         songName = "What's my age again";

@@ -34,3 +34,35 @@
               Actors: Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl
               Tomato Rating: 72%
               IMDb Rating: 7.6
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Song Name: 'WHAT'S MY AGE AGAIN'
+              Album Name: Enema Of The State
+              Artist Name: blink-182
+              URL: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+
+
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Song Name: 'TWEEZER'
+              Album Name: Rumble Tumble EP
+              Artist Name: Aitor Ronda
+              URL: https://open.spotify.com/album/7EMzMc5X8Imeozz2oL5piA
+
+
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Song Name: 'FARMHOUSE'
+              Album Name: Farmhouse
+              Artist Name: Phish
+              URL: https://open.spotify.com/album/63pJMk3S5vS5e8wrInkDhi
+
+
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Song Name: 'TWEEZER'
+              Album Name: Rumble Tumble EP
+              Artist Name: Aitor Ronda
+              URL: https://open.spotify.com/album/7EMzMc5X8Imeozz2oL5piA
+
+
