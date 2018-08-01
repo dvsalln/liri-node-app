@@ -1,0 +1,36 @@
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Title: Mr. Nobody
+              Year: 2009
+              Rated: R
+              IMDB Rating: 7.9
+              Country: Belgium, Germany, Canada, France, USA, UK
+              Language: English, Mohawk
+              Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+              Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+              Tomato Rating: 66%
+              IMDb Rating: 7.9
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Title: 2001: A Space Odyssey
+              Year: 1968
+              Rated: G
+              IMDB Rating: 8.3
+              Country: UK, USA
+              Language: English, Russian
+              Plot: Humanity finds a mysterious, obviously artificial object buried beneath the Lunar surface and, with the intelligent computer HAL 9000, sets off on a quest.
+              Actors: Keir Dullea, Gary Lockwood, William Sylvester, Daniel Richter
+              Tomato Rating: 92%
+              IMDb Rating: 8.3
+
+              ================= LIRI FOUND THIS FOR YOU...==================
+              Title: Batman
+              Year: 1989
+              Rated: PG-13
+              IMDB Rating: 7.6
+              Country: USA, UK
+              Language: English, French, Spanish
+              Plot: The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.
+              Actors: Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl
+              Tomato Rating: 72%
+              IMDb Rating: 7.6

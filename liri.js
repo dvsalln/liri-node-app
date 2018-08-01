@@ -4,12 +4,20 @@
 // * movie-this
 // * do-what-it-says
 
-//these add other programs to this one
-let dataKeys = require("./keys.js");
-let fs = require('fs'); //file system
-let twitter = require('twitter');
-let Spotify = require('node-spotify-api');
-let request = require('request');
+const Twitter = require('twitter');
+const Spotify = require('node-spotify-api');
+const request = require('request');
+const dotenv = require("dotenv").config();
+const keys = require("./keys.js");
+const fs = require("fs");
+// const util = require("util");
+
+let spotify = new Spotify(keys.spotify);
+let twitter = new Twitter(keys.twitter);
+
+let keyword = process.argv[2];
+let divider = "\n-------------------------\n";
+let params;
 let space = "\n" + "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0";
 
 let writeToLog = function(data) {
@@ -56,39 +64,28 @@ function getMeSpotify(songName) {
 
 
 
-let getTweets = function() {
-    let client = new twitter(dataKeys.twitterKeys);
-    let params = { screen_name: 'dvsalln', count: 10 };
+function getTweets() {
+    params = {
+        screen_name: "dvsalln",
+        count: "20",
+    };
 
+    twitter.get("statuses/user_timeline", params, function (err, tweets, response) {
 
-    client.get('statuses/user_timeline', params, function(err, tweets, res) {
+        if (!err) {
 
-        if (err) {
-            console.log('Error occured: ' + err);
-            return;
-        } else {
-            // let data = space + 'Created at: ' + tweets.created_at +
-            //     space + 'Tweets: ' + tweets.text;
-            let data = []; //empty array to hold data
-            for (let i = 0; i < tweets.length; i++) {
-                data.push({
-                    'Created at: ': tweets[i].created_at,
-                    'Tweets: ': tweets[i].text,
-                });
-            }
-            console.log(data);
-            // console.log(tweets[0].user.description);
-            writeToLog(data);
-
-            // fs.appendFile("log.txt", output, function(err) {
-            //     if (err) throw err;
-            //     console.log('Saved!');
-            // });
+            console.log(`Your last 20 tweets are:`);
+            tweets.forEach(tweet => {
+                console.log(`${divider}Date Created: ${tweet.created_at} \nContent: ${tweet.text}`);
+            });
 
         }
-
+        else {
+            console.log(`Oops.. tweets couldn't be retrieved.`);
+            console.log(err);
+        }
     });
-};
+}
 
 let getMeMovie = function(movieName) {
 
@@ -123,11 +120,11 @@ let getMeMovie = function(movieName) {
             fs.appendFile("log.txt", output, function(err) {
                 if (err) throw err;
                 console.log('Saved!');
-                space
+                space;
             });
         }
     });
-}
+};
 
 let doWhatItSays = function() {
     fs.readFile("random.txt", "utf8", function(error, data) {
@@ -164,7 +161,7 @@ let pick = function(caseData, functionData) {
         default:
             console.log('LIRI doesn\'t know that');
     }
-}
+};
 
 //run this on load of js file
 let runThis = function(argOne, argTwo) {
